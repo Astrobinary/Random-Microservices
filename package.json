@@ -1,0 +1,16 @@
+{
+    "name": "random-microservices",
+    "version": "1.0.0",
+    "description": "Bunch of random microservices",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Brandon Padilla",
+    "license": "MIT",
+    "dependencies": {
+        "express": "^4.13.4",
+        "moment": "^2.11.1",
+        "mongodb": "^2.1.4"
+    }
+}
