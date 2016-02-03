@@ -6,9 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Timestamp Microservice</title>
+    <title>File-Metadata Microservice</title>
 
     <link href="/public/css/main.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -19,17 +21,190 @@
 
 <body>
 
-    <div class="container">
-        <h1>Timestamp Microservice</h1>
+    <div class="sidebar">
+        <i title="Menu" class="fa fa-bars"></i>
+        <div class="links">
+            <a target="_blank" href="http://www.freecodecamp.com/agnostics"><i title="FreeCodeCamp" class="tooltip fa fa-fire"></i></a>
+            <a target="_blank" href="https://github.com/Agnostics/Random-Microservices"><i title="Github" class="tooltip fa fa-github"></i></a>
+            <a target="_blank" href="https://twitter.com/_BrandonPadilla"><i title="Twitter" class="tooltip fa fa-twitter"></i></a>
 
-        <h4>Example usage:</h4>
-        <span>http://shielded-ridge-11292.herokuapp.com/December%2015,%202015</span>
-        <br>
-        <span>http://shielded-ridge-11292.herokuapp.com/1450137600</span>
+        </div>
 
-        <h4>Example output:</h4>
-        <span>{ "unix": 1450137600, "natural": "December 15, 2015" }</span>
     </div>
+
+    <div class="timestamp-bg">
+        <div class="card">
+            <h1>unix timestamp <i class="info fa fa-github"></i></h1>
+            <h2>converts unix/natural timestamps</h2>
+
+            <div class="usage">
+                <h3>Example Usage:</h3>
+                <code>http://localhost:3000/api/timestamp/December 16, 1991</code>
+                <code>http://localhost:3000/api/timestamp/692841600</code>
+
+                <h3>Example Output:</h3>
+                <code>{"unix":"692841600","natural":"December 16, 1991"}</code>
+
+                <h3>Documentation:</h3>
+                <a target="_blank" href="http://momentjs.com/docs/">http://momentjs.com/docs/</a>
+            </div>
+
+            <div class="timestamp">
+                <div class="request">
+                    <h3>Request:</h3>
+                    <input type="text" placeholder="enter date/unix code" />
+                </div>
+
+                <div class="response">
+                    <h3>Response:</h3>
+                    <p>None </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fm-bg">
+        <div class="card">
+            <h1>file metadata <i class="info fa fa-github"></i></h1>
+            <h2>gathers basic data from given file</h2>
+
+            <div class="usage">
+                <h3>Example Usage:</h3>
+                <code>Current file image uploaded (view)</code>
+
+                <h3>Example Output:</h3>
+                <code>{"filesize": 72424}</code>
+
+                <h3>Documentation:</h3>
+                <a target="_blank" href="https://github.com/expressjs/multer">https://github.com/expressjs/multer</a>
+            </div>
+
+
+
+            <div class="metadata">
+                <div class="request">
+                    <h3>Request:</h3>
+                    <input type="file" id="input">
+                </div>
+
+                <div class="response">
+                    <h3>Response:</h3>
+                    <p>None </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="url-bg">
+        <div class="card ">
+            <h1>url shortener <i class="info fa fa-github"></i></h1>
+            <h2>converts url into a condensed format</h2>
+
+            <div class="usage">
+                <h3>Example Usage:</h3>
+                <code>http://www.google.com</code>
+
+                <h3>Example Output:</h3>
+                <code>{ "original_url": "http://www.google.com", "short_url": "http://localhost:3000/4" }</code>
+
+
+                <h3>Documentation:</h3>
+                <a target="_blank" href="https://github.com/expressjs/multer">IDK YET</a>
+            </div>
+
+            <div class="url-short">
+                <div class="request">
+                    <h3>Request:</h3>
+                    <input type="text" placeholder="enter url to shorten" />
+                </div>
+
+                <div class="response">
+                    <h3>Response:</h3>
+                    <p>None </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="header-bg">
+        <div class="card ">
+            <h1>my address <i class="info fa fa-github"></i></h1>
+            <h2>gets basic data from user</h2>
+
+            <div class="usage">
+                <h3>Example Usage:</h3>
+                <code>http://localhost:3000/api/whoami</code>
+
+                <h3>Example Output:</h3>
+                <code>{"ip":"127.0.0.1","language":"en-US","software":"Windows NT 10.0; Win64; x64"}</code>
+
+
+                <h3>Documentation:</h3>
+                <a target="_blank" href="http://expressjs.com/en/api.html#req.ip">http://expressjs.com/en/api.html#req.ip</a>
+            </div>
+
+            <div class="header-parser">
+                <div class="request">
+                    <h3>Request:</h3>
+                    <button>View my data</button>
+                </div>
+
+                <div class="response">
+                    <h3>Response:</h3>
+                    <p>None </p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="img-bg">
+        <div class="card ">
+            <h1>image abstraction <i class="info fa fa-github"></i></h1>
+            <h2>returns images from search param</h2>
+
+            <div class="usage">
+                <h3>Example Usage:</h3>
+                <code>http://localhost:3000/api/imgsearch/lolcats</code>
+
+                <h3>Example Output:</h3>
+                <code>{"url":"http://data.whicdn.com/images/14404665/original.jpg","snippet":"We Heart It | cat, funny,"</code>
+
+
+                <h3>Documentation:</h3>
+                <a target="_blank" href="http://expressjs.com/en/api.html#req.ip">http://expressjs.com/en/api.html#req.ip</a>
+            </div>
+
+            <div class="img-ab">
+                <div class="request">
+                    <h3>Request:</h3>
+                    <input type="text" placeholder="enter search term" />
+                </div>
+
+                <div class="response">
+                    <h3>Response:</h3>
+                    <p>None </p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script type="text/javascript" src="/public/js/main.js"></script>
+
 
 </body>
 

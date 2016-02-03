@@ -1,5 +1,5 @@
 'use strict';
 
 exports.index = function (req, res) {
-    res.send('FILE-CONTROLLER!!');
+    res.sendFile(process.cwd() + '/public/file-metadata.html');
 };
