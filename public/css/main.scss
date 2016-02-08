@@ -8,8 +8,7 @@ body {
 
 .sidebar {
     position: fixed;
-    display: inline-block;
-    height: 100vh;
+    height: 100%;
     left: 0;
     top: 0;
     width: 50px;
@@ -34,24 +33,50 @@ body {
     }
 }
 
-.open-menu {
-    width: 250px;
-    .fa-bars {
-        position: absolute;
-        right: 0px;
-        margin-right: 20px;
+.nav {
+    margin-top: 25vh;
+    a {
+        text-decoration: none;
+        color: #eee;
     }
-    .links {
-        position: absolute;
-        bottom: 0px;
-        a {
-            padding: 0 20px;
-        }
+    .box {
+        width: 100%;
+        height: 30px;
+        margin: 20px 0;
+        color: #eee;
+        letter-spacing: 2px;
+        font-size: 16px;
+        text-align: center;
+        line-height: 30px;
     }
 }
 
-.open-card {
-    margin-left: 230px !important;
+.blue {
+    background: #6495ED;
+}
+
+.green {
+    background: #37a679;
+}
+
+.red {
+    background: #F26D6D;
+}
+
+.purple {
+    background: #bd63de;
+}
+
+.orange {
+    background: #E8852C;
+}
+
+.not-active {
+    opacity: 0.4;
+    &:hover {
+        opacity: 1;
+        cursor: pointer;
+    }
 }
 
 .card {

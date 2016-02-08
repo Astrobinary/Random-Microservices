@@ -22,7 +22,29 @@
 <body>
 
     <div class="sidebar">
-        <i title="Menu" class="fa fa-bars"></i>
+        <i title="Menu" id="icon" class="fa fa-bars"></i>
+
+        <div class="nav">
+            <a href="#unix">
+                <div class="box blue">unix</div>
+            </a>
+            <a href="#file">
+                <div class="box green not-active">file</div>
+            </a>
+            <a href="#url">
+                <div class="box red not-active">url</div>
+            </a>
+            <a href="#add">
+                <div class="box purple not-active">add</div>
+            </a>
+            <a href="#img">
+                <div class="box orange not-active">img</div>
+            </a>
+
+        </div>
+
+
+
         <div class="links">
             <a target="_blank" href="http://www.freecodecamp.com/agnostics"><i title="FreeCodeCamp" class="tooltip fa fa-fire"></i></a>
             <a target="_blank" href="https://github.com/Agnostics/Random-Microservices"><i title="Github" class="tooltip fa fa-github"></i></a>
@@ -32,7 +54,9 @@
 
     </div>
 
-    <div class="timestamp-bg">
+
+
+    <div class="timestamp-bg" id="unix">
         <div class="card">
             <h1>unix timestamp <i class="info fa fa-github"></i></h1>
             <h2>converts unix/natural timestamps</h2>
@@ -63,7 +87,7 @@
         </div>
     </div>
 
-    <div class="fm-bg">
+    <div class="fm-bg" id="file">
         <div class="card">
             <h1>file metadata <i class="info fa fa-github"></i></h1>
             <h2>gathers basic data from given file</h2>
@@ -78,8 +102,6 @@
                 <h3>Documentation:</h3>
                 <a target="_blank" href="https://github.com/expressjs/multer">https://github.com/expressjs/multer</a>
             </div>
-
-
 
             <div class="metadata">
                 <div class="request">
@@ -97,7 +119,7 @@
 
 
 
-    <div class="url-bg">
+    <div class="url-bg" id="url">
         <div class="card ">
             <h1>url shortener <i class="info fa fa-github"></i></h1>
             <h2>converts url into a condensed format</h2>
@@ -130,7 +152,7 @@
     </div>
 
 
-    <div class="header-bg">
+    <div class="header-bg" id="add">
         <div class="card ">
             <h1>my address <i class="info fa fa-github"></i></h1>
             <h2>gets basic data from user</h2>
@@ -164,7 +186,7 @@
     </div>
 
 
-    <div class="img-bg">
+    <div class="img-bg" id="img">
         <div class="card ">
             <h1>image abstraction <i class="info fa fa-github"></i></h1>
             <h2>returns images from search param</h2>
