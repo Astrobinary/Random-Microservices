@@ -13,5 +13,5 @@ exports.index = function (req, res) {
         software: req.headers['user-agent'].split(') ')[0].split(' (')[1]
     };
 
-    res.send(data);
+    res.send(JSON.stringify(data));
 };

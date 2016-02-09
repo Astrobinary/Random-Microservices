@@ -1,7 +1,10 @@
 'use strict';
 
+
 $(document).ready(function () {
     var sidebarStatus = false;
+
+    //Animates the sidebar
     $('#icon').click(function () {
         if (sidebarStatus === false) {
             sidebarStatus = true;
@@ -58,4 +61,52 @@ $(document).ready(function () {
 
         }
     });
+
+
+    //Sets and follows waypoints for side menu
+    function getRelatedContent(el) {
+        return $($(el).attr('href'));
+    }
+
+    $('.nav a').on('click', function (e) {
+        e.preventDefault();
+        $('html,body').animate({
+            scrollTop: getRelatedContent(this).offset().top
+        });
+    });
+
+    $('.card')
+        .waypoint(function (direction) {
+            $('.nav a[href="#' + $(this).parent().attr('id') + '"] div').toggleClass('active', direction === 'down');
+        }, {
+            offset: '60%'
+        })
+        .waypoint(function (direction) {
+            $('.nav a[href="#' + $(this).parent().attr('id') + '"] div').toggleClass('active', direction === 'up');
+        }, {
+            offset: function () {
+                return -$(this).height() + 200;
+            }
+        });
+
+
+    //Handles Unix Timestamp card on enter
+    $('.unix-text').keydown(function (event) {
+        if (event.keyCode === 13) {
+
+            var input = $('.unix-text').val();
+
+            $.get('/api/timestamp/' + input, function (data) {
+                $('.unix-response').text(data);
+            });
+        }
+    });
+
+    $(".process-address").click(function () {
+        $.get('/api/whoami/', function (data) {
+            $('.address-response').text(JSON.stringify(data));
+        });
+    });
+
+
 });

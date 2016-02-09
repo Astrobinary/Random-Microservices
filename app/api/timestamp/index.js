@@ -5,7 +5,6 @@ var controller = require('./controller');
 
 var router = express.Router();
 
-router.post('/', controller.index);
-
+router.get('/:date', controller.index);
 
 module.exports = router;

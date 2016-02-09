@@ -48,6 +48,11 @@ body {
         font-size: 16px;
         text-align: center;
         line-height: 30px;
+        opacity: 0.4;
+        &:hover {
+            opacity: 1;
+            cursor: pointer;
+        }
     }
 }
 
@@ -71,12 +76,8 @@ body {
     background: #E8852C;
 }
 
-.not-active {
-    opacity: 0.4;
-    &:hover {
-        opacity: 1;
-        cursor: pointer;
-    }
+.active {
+    opacity: 1 !important;
 }
 
 .card {
@@ -98,10 +99,6 @@ body {
     .response {
         display: inline-block;
         padding-left: 100px;
-        p {
-            font-style: italic;
-            opacity: 0.6;
-        }
     }
     .info {
         font-size: 20px;
