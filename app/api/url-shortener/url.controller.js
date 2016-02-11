@@ -21,12 +21,12 @@ exports.index = function (req, res) {
             if (url.length < 1 || url === null) {
                 Short.create({
                     original: req.url.slice(1),
-                    short: 'http://localhost:3000/' + uniqueNum,
+                    short: 'https://random302.herokuapp.com/' + uniqueNum,
                     unique: uniqueNum
                 });
 
                 var shortUrl = {
-                    short: 'http://localhost:3000/' + uniqueNum,
+                    short: 'https://random302.herokuapp.com/' + uniqueNum,
                     original: req.url.slice(1)
                 };
 

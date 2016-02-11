@@ -8,7 +8,7 @@ body {
 
 .sidebar {
     position: fixed;
-    height: 100%;
+    height: 100vh;
     left: 0;
     top: 0;
     width: 50px;
@@ -81,25 +81,22 @@ body {
 }
 
 .card {
-    margin-left: 30px;
+    margin-left: 50px;
     min-height: 400px;
     padding-bottom: 100px;
     .usage {
+        overflow: auto;
         h3 {
             margin-bottom: 0px;
         }
         color: #eee;
         margin-left: 20px;
-        max-width: 500px;
+        max-width: 600px;
         padding: 0px 0px 10px 10px;
         font-size: 16px;
     }
     .request {
         display: inline-block;
-    }
-    .response {
-        display: inline-block;
-        padding-left: 100px;
     }
     .info {
         font-size: 20px;
@@ -133,7 +130,6 @@ body {
 
 .fm-bg {
     background-color: #37a679;
-    margin-left: 20px;
     h1,
     h2 {
         background-color: #3cb483;
@@ -174,7 +170,6 @@ body {
 
 .timestamp-bg {
     background-color: #6495ED;
-    margin-left: 20px;
     h1,
     h2 {
         background-color: #6ca0fe;
@@ -207,7 +202,6 @@ body {
 
 .url-bg {
     background-color: #F26D6D;
-    margin-left: 20px;
     h1,
     h2 {
         background-color: #EF8080;
@@ -236,10 +230,12 @@ body {
 
 .header-bg {
     background-color: #bd63de;
-    margin-left: 20px;
     h1,
     h2 {
         background-color: #cd6cf0;
+    }
+    .usage {
+        border-left: 5px solid #cd6cf0;
     }
     .header-parser {
         margin-left: 30px;
@@ -268,10 +264,12 @@ body {
 
 .img-bg {
     background-color: #E8852C;
-    margin-left: 20px;
     h1,
     h2 {
         background-color: #fa8e2e;
+    }
+    .usage {
+        border-left: 5px solid #fa8e2e;
     }
     .img-ab {
         margin-left: 30px;
@@ -295,6 +293,10 @@ body {
     }
 }
 
+.img-response {
+    overflow: auto;
+}
+
 @mixin placeholder {
     ::-webkit-input-placeholder {
         @content
@@ -314,4 +316,74 @@ body {
     color: white;
     font-weight: 100;
     opacity: .7;
+}
+
+
+/* Custom, iPhone Retina */
+
+@media only screen and (max-width: 600px) {
+    .card {
+        margin-left: 35px !important;
+        height: 100%;
+        padding-bottom: 20px;
+        h1 {
+            font-size: 25px;
+        }
+        h2 {
+            font-size: 10px;
+            margin-top: -17px;
+            padding-bottom: 10px;
+            letter-spacing: 3px;
+        }
+        .usage {
+            margin-left: 10px;
+            h3 {
+                font-size: 15px;
+            }
+        }
+    }
+    .nav {
+        margin-top: 10vh;
+    }
+    .sidebar {
+        width: 39px;
+        i {
+            margin: 15px 0px 0px 8px;
+        }
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 800px) {
+    .card {
+        margin-left: 35px !important;
+        height: 100%;
+        padding-bottom: 20px;
+        h1 {
+            font-size: 25px;
+        }
+        h2 {
+            font-size: 10px;
+            margin-top: -17px;
+            padding-bottom: 10px;
+            letter-spacing: 3px;
+        }
+        .usage {
+            margin-left: 10px;
+            h3 {
+                font-size: 15px;
+            }
+        }
+    }
+    .nav {
+        margin-top: 10vh;
+    }
+    .sidebar {
+        width: 39px;
+        i {
+            margin: 15px 0px 0px 8px;
+        }
+    }
+    .links {
+        display: none;
+    }
 }

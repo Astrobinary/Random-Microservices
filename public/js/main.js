@@ -4,6 +4,37 @@
 $(document).ready(function () {
     var sidebarStatus = false;
 
+    function closeMenu() {
+        sidebarStatus = false;
+
+        $('.sidebar').animate({
+            width: '50px'
+        }, 500);
+        $('.card').animate({
+            marginLeft: '50px'
+        }, 500);
+
+        $('#icon').removeClass('fa-arrow-left');
+        $('#icon').addClass('fa-bars');
+
+        $('#icon').animate({
+            marginLeft: '12px'
+        }, 500);
+        $('.links').animate({
+            paddingLeft: '0px'
+        });
+
+        $('.blue').text('unix');
+        $('.green').text('file');
+        $('.red').text('url');
+        $('.purple').text('add');
+        $('.orange').text('img');
+    }
+
+    $('.nav a').on('click', function () {
+        closeMenu();
+    });
+
     //Animates the sidebar
     $('#icon').click(function () {
         if (sidebarStatus === false) {
@@ -13,7 +44,7 @@ $(document).ready(function () {
                 width: '250px'
             }, 500);
             $('.card').animate({
-                marginLeft: '230px'
+                marginLeft: '250px'
             }, 500);
 
             $('#icon').removeClass('fa-bars');
@@ -32,33 +63,8 @@ $(document).ready(function () {
             $('.red').text('url shortener');
             $('.purple').text('my address');
             $('.orange').text('image abstraction');
-
         } else {
-            sidebarStatus = false;
-
-            $('.sidebar').animate({
-                width: '50px'
-            }, 500);
-            $('.card').animate({
-                marginLeft: '30px'
-            }, 500);
-
-            $('#icon').removeClass('fa-arrow-left');
-            $('#icon').addClass('fa-bars');
-
-            $('#icon').animate({
-                marginLeft: '12px'
-            }, 500);
-            $('.links').animate({
-                paddingLeft: '0px'
-            });
-
-            $('.blue').text('unix');
-            $('.green').text('file');
-            $('.red').text('url');
-            $('.purple').text('add');
-            $('.orange').text('img');
-
+            closeMenu();
         }
     });
 

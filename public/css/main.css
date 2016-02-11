@@ -9,7 +9,7 @@ body {
 /* line 9, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
 .sidebar {
   position: fixed;
-  height: 100%;
+  height: 100vh;
   left: 0;
   top: 0;
   width: 50px;
@@ -82,32 +82,29 @@ body {
 
 /* line 83, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
 .card {
-  margin-left: 30px;
+  margin-left: 50px;
   min-height: 400px;
   padding-bottom: 100px; }
   /* line 87, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
   .card .usage {
+    overflow: auto;
     color: #eee;
     margin-left: 20px;
-    max-width: 500px;
+    max-width: 600px;
     padding: 0px 0px 10px 10px;
     font-size: 16px; }
-    /* line 88, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+    /* line 89, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
     .card .usage h3 {
       margin-bottom: 0px; }
-  /* line 97, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+  /* line 98, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
   .card .request {
     display: inline-block; }
-  /* line 100, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
-  .card .response {
-    display: inline-block;
-    padding-left: 100px; }
-  /* line 104, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+  /* line 101, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
   .card .info {
     font-size: 20px;
     margin-left: -35px;
     cursor: pointer; }
-  /* line 109, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+  /* line 106, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
   .card h1 {
     padding-top: 5px;
     padding-left: 30px;
@@ -116,7 +113,7 @@ body {
     margin-top: 0px;
     color: #eee;
     font-family: 'Poiret One', cursive; }
-  /* line 118, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+  /* line 115, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
   .card h2 {
     padding-left: 30px;
     padding-bottom: 20px;
@@ -125,36 +122,35 @@ body {
     letter-spacing: 10px;
     font-family: 'Poiret One', cursive;
     color: #eee; }
-  /* line 127, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+  /* line 124, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
   .card a {
     text-decoration: none;
     color: #eee;
     font-family: monospace; }
 
-/* line 134, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+/* line 131, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
 .fm-bg {
-  background-color: #37a679;
-  margin-left: 20px; }
-  /* line 138, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+  background-color: #37a679; }
+  /* line 134, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
   .fm-bg h1,
   .fm-bg h2 {
     background-color: #3cb483; }
-  /* line 141, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+  /* line 137, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
   .fm-bg .usage {
     border-left: 5px solid #3cb483; }
-  /* line 144, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+  /* line 140, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
   .fm-bg .metadata {
     margin-left: 30px;
     color: #eee;
     font-family: 'Ubuntu', sans-serif; }
-    /* line 148, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+    /* line 144, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
     .fm-bg .metadata h3 {
       margin-bottom: 10px; }
-    /* line 151, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+    /* line 147, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
     .fm-bg .metadata .file-upload {
       position: relative;
       overflow: hidden; }
-    /* line 155, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+    /* line 151, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
     .fm-bg .metadata .file-upload input.file-input {
       position: absolute;
       top: 0;
@@ -165,31 +161,30 @@ body {
       opacity: 0;
       filter: alpha(opacity=0);
       cursor: pointer; }
-    /* line 167, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+    /* line 163, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
     .fm-bg .metadata button:hover {
       background: white;
       color: #40C18C; }
 
-/* line 175, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+/* line 171, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
 .timestamp-bg {
-  background-color: #6495ED;
-  margin-left: 20px; }
-  /* line 179, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+  background-color: #6495ED; }
+  /* line 174, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
   .timestamp-bg h1,
   .timestamp-bg h2 {
     background-color: #6ca0fe; }
-  /* line 182, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+  /* line 177, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
   .timestamp-bg .usage {
     border-left: 5px solid #6ca0fe; }
-  /* line 185, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+  /* line 180, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
   .timestamp-bg .timestamp {
     margin-left: 30px;
     color: #eee;
     font-family: 'Ubuntu', sans-serif; }
-    /* line 189, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+    /* line 184, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
     .timestamp-bg .timestamp h3 {
       margin-bottom: 10px; }
-    /* line 192, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+    /* line 187, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
     .timestamp-bg .timestamp input[type=text] {
       background: none;
       border: none;
@@ -199,26 +194,25 @@ body {
       padding-left: 5px;
       color: white;
       letter-spacing: 2px; }
-      /* line 201, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+      /* line 196, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
       .timestamp-bg .timestamp input[type=text]:focus {
         outline: none; }
 
-/* line 208, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+/* line 203, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
 .url-bg {
-  background-color: #F26D6D;
-  margin-left: 20px; }
-  /* line 212, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+  background-color: #F26D6D; }
+  /* line 206, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
   .url-bg h1,
   .url-bg h2 {
     background-color: #EF8080; }
-  /* line 215, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+  /* line 209, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
   .url-bg .usage {
     border-left: 5px solid #EF8080; }
-  /* line 218, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+  /* line 212, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
   .url-bg .url-short {
     margin-left: 30px;
     color: #eee; }
-  /* line 222, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+  /* line 216, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
   .url-bg input[type=text] {
     background: none;
     border: none;
@@ -228,26 +222,28 @@ body {
     padding-left: 5px;
     color: white;
     letter-spacing: 2px; }
-    /* line 231, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+    /* line 225, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
     .url-bg input[type=text]:focus {
       outline: none; }
 
-/* line 237, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+/* line 231, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
 .header-bg {
-  background-color: #bd63de;
-  margin-left: 20px; }
-  /* line 241, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+  background-color: #bd63de; }
+  /* line 234, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
   .header-bg h1,
   .header-bg h2 {
     background-color: #cd6cf0; }
-  /* line 244, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+  /* line 237, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+  .header-bg .usage {
+    border-left: 5px solid #cd6cf0; }
+  /* line 240, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
   .header-bg .header-parser {
     margin-left: 30px;
     color: #eee; }
-    /* line 247, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+    /* line 243, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
     .header-bg .header-parser h3 {
       margin-bottom: 10px; }
-    /* line 250, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+    /* line 246, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
     .header-bg .header-parser button {
       background: none;
       border: 2px solid white;
@@ -256,30 +252,32 @@ body {
       color: #eee;
       font-family: monospace;
       cursor: pointer; }
-      /* line 258, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+      /* line 254, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
       .header-bg .header-parser button:hover {
         background: white;
         color: #bd63de; }
-      /* line 262, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+      /* line 258, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
       .header-bg .header-parser button:focus {
         outline: none; }
 
-/* line 269, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+/* line 265, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
 .img-bg {
-  background-color: #E8852C;
-  margin-left: 20px; }
-  /* line 273, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+  background-color: #E8852C; }
+  /* line 268, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
   .img-bg h1,
   .img-bg h2 {
     background-color: #fa8e2e; }
-  /* line 276, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+  /* line 271, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+  .img-bg .usage {
+    border-left: 5px solid #fa8e2e; }
+  /* line 274, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
   .img-bg .img-ab {
     margin-left: 30px;
     color: #eee; }
-    /* line 279, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+    /* line 277, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
     .img-bg .img-ab h3 {
       margin-bottom: 10px; }
-    /* line 282, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+    /* line 280, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
     .img-bg .img-ab input[type=text] {
       background: none;
       border: none;
@@ -289,32 +287,102 @@ body {
       padding-left: 5px;
       color: white;
       letter-spacing: 2px; }
-      /* line 291, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+      /* line 289, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
       .img-bg .img-ab input[type=text]:focus {
         outline: none; }
 
-/* line 299, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+/* line 296, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+.img-response {
+  overflow: auto; }
+
+/* line 301, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
 ::-webkit-input-placeholder {
   color: white;
   font-weight: 100;
   opacity: .7; }
 
-/* line 302, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+/* line 304, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
 :-moz-placeholder {
   color: white;
   font-weight: 100;
   opacity: .7; }
 
-/* line 305, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+/* line 307, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
 ::-moz-placeholder {
   color: white;
   font-weight: 100;
   opacity: .7; }
 
-/* line 308, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+/* line 310, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
 :-ms-input-placeholder {
   color: white;
   font-weight: 100;
   opacity: .7; }
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 600px) {
+  /* line 325, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+  .card {
+    margin-left: 35px !important;
+    height: 100%;
+    padding-bottom: 20px; }
+    /* line 329, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+    .card h1 {
+      font-size: 25px; }
+    /* line 332, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+    .card h2 {
+      font-size: 10px;
+      margin-top: -17px;
+      padding-bottom: 10px;
+      letter-spacing: 3px; }
+    /* line 338, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+    .card .usage {
+      margin-left: 10px; }
+      /* line 340, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+      .card .usage h3 {
+        font-size: 15px; }
+  /* line 345, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+  .nav {
+    margin-top: 10vh; }
+  /* line 348, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+  .sidebar {
+    width: 39px; }
+    /* line 350, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+    .sidebar i {
+      margin: 15px 0px 0px 8px; } }
+
+@media only screen and (min-width: 500px) and (max-width: 800px) {
+  /* line 357, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+  .card {
+    margin-left: 35px !important;
+    height: 100%;
+    padding-bottom: 20px; }
+    /* line 361, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+    .card h1 {
+      font-size: 25px; }
+    /* line 364, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+    .card h2 {
+      font-size: 10px;
+      margin-top: -17px;
+      padding-bottom: 10px;
+      letter-spacing: 3px; }
+    /* line 370, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+    .card .usage {
+      margin-left: 10px; }
+      /* line 372, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+      .card .usage h3 {
+        font-size: 15px; }
+  /* line 377, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+  .nav {
+    margin-top: 10vh; }
+  /* line 380, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+  .sidebar {
+    width: 39px; }
+    /* line 382, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+    .sidebar i {
+      margin: 15px 0px 0px 8px; }
+  /* line 386, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+  .links {
+    display: none; } }
 
 /*# sourceMappingURL=main.css.map */
