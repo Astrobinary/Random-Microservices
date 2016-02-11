@@ -1,7 +1,7 @@
 'use strict';
 
 var express = require('express');
-var controller = require('./controller');
+var controller = require('./timestamp.controller');
 
 var router = express.Router();
 

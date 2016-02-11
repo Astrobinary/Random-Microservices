@@ -1,11 +1,10 @@
 'use strict';
 
 var express = require('express');
-var controller = require('./file.controller');
+var controller = require('./img.controller');
 
 var router = express.Router();
 
-router.post('/', controller.index);
-
+router.get('/:term', controller.index);
 
 module.exports = router;

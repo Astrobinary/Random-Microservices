@@ -93,18 +93,38 @@ $(document).ready(function () {
     //Handles Unix Timestamp card on enter
     $('.unix-text').keydown(function (event) {
         if (event.keyCode === 13) {
-
             var input = $('.unix-text').val();
-
             $.get('/api/timestamp/' + input, function (data) {
                 $('.unix-response').text(data);
             });
         }
     });
 
-    $(".process-address").click(function () {
+    //Handles URL Shortener card on enter
+    $('.url-text').keydown(function (event) {
+        if (event.keyCode === 13) {
+            var input = $('.url-text').val();
+            $.get('/api/short/' + input, function (data) {
+                $('.url-response').text(data);
+            });
+        }
+    });
+
+    //Handles Image Search card on enter
+    $('.img-text').keydown(function (event) {
+        if (event.keyCode === 13) {
+            var input = $('.img-text').val();
+            $.get('/api/img/' + input, function (data) {
+                var output = data[0];
+                $('.img-response').text(JSON.stringify(output));
+            });
+        }
+    });
+
+    //Handles My Address card
+    $('.process-address').click(function () {
         $.get('/api/whoami/', function (data) {
-            $('.address-response').text(JSON.stringify(data));
+            $('.address-response').text(data);
         });
     });
 
