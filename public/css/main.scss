@@ -323,7 +323,7 @@ body {
 
 @media only screen and (max-width: 600px) {
     .card {
-        margin-left: 35px !important;
+        margin-left: 35px;
         height: 100%;
         padding-bottom: 20px;
         h1 {
@@ -337,10 +337,11 @@ body {
         }
         .usage {
             margin-left: 10px;
-            h3 {
-                font-size: 15px;
-            }
+            font-size: 13px;
         }
+    }
+    h3 {
+        font-size: 15px !important;
     }
     .nav {
         margin-top: 10vh;
@@ -350,12 +351,15 @@ body {
         i {
             margin: 15px 0px 0px 8px;
         }
+    }
+    input[type=text] {
+        font-size: 11px !important;
     }
 }
 
 @media only screen and (min-width: 500px) and (max-width: 800px) {
     .card {
-        margin-left: 35px !important;
+        margin-left: 35px;
         height: 100%;
         padding-bottom: 20px;
         h1 {
@@ -369,10 +373,11 @@ body {
         }
         .usage {
             margin-left: 10px;
-            h3 {
-                font-size: 15px;
-            }
+            font-size: 13px;
         }
+    }
+    h3 {
+        font-size: 15px !important;
     }
     .nav {
         margin-top: 10vh;
@@ -380,10 +385,13 @@ body {
     .sidebar {
         width: 39px;
         i {
-            margin: 15px 0px 0px 8px;
+            margin: 15px 0px 0px 15px;
         }
     }
     .links {
         display: none;
+    }
+    input[type=text] {
+        font-size: 12px !important;
     }
 }

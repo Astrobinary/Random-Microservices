@@ -323,7 +323,7 @@ body {
 @media only screen and (max-width: 600px) {
   /* line 325, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
   .card {
-    margin-left: 35px !important;
+    margin-left: 35px;
     height: 100%;
     padding-bottom: 20px; }
     /* line 329, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
@@ -337,52 +337,60 @@ body {
       letter-spacing: 3px; }
     /* line 338, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
     .card .usage {
-      margin-left: 10px; }
-      /* line 340, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
-      .card .usage h3 {
-        font-size: 15px; }
-  /* line 345, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+      margin-left: 10px;
+      font-size: 13px; }
+  /* line 343, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+  h3 {
+    font-size: 15px !important; }
+  /* line 346, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
   .nav {
     margin-top: 10vh; }
-  /* line 348, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+  /* line 349, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
   .sidebar {
     width: 39px; }
-    /* line 350, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+    /* line 351, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
     .sidebar i {
-      margin: 15px 0px 0px 8px; } }
+      margin: 15px 0px 0px 8px; }
+  /* line 355, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+  input[type=text] {
+    font-size: 11px !important; } }
 
 @media only screen and (min-width: 500px) and (max-width: 800px) {
-  /* line 357, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+  /* line 361, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
   .card {
-    margin-left: 35px !important;
+    margin-left: 35px;
     height: 100%;
     padding-bottom: 20px; }
-    /* line 361, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+    /* line 365, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
     .card h1 {
       font-size: 25px; }
-    /* line 364, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+    /* line 368, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
     .card h2 {
       font-size: 10px;
       margin-top: -17px;
       padding-bottom: 10px;
       letter-spacing: 3px; }
-    /* line 370, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+    /* line 374, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
     .card .usage {
-      margin-left: 10px; }
-      /* line 372, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
-      .card .usage h3 {
-        font-size: 15px; }
-  /* line 377, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+      margin-left: 10px;
+      font-size: 13px; }
+  /* line 379, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+  h3 {
+    font-size: 15px !important; }
+  /* line 382, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
   .nav {
     margin-top: 10vh; }
-  /* line 380, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+  /* line 385, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
   .sidebar {
     width: 39px; }
-    /* line 382, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+    /* line 387, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
     .sidebar i {
-      margin: 15px 0px 0px 8px; }
-  /* line 386, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+      margin: 15px 0px 0px 15px; }
+  /* line 391, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
   .links {
-    display: none; } }
+    display: none; }
+  /* line 394, C:/Users/brand/Documents/Web Design/Apps/Random-Microservices/public/css/main.scss */
+  input[type=text] {
+    font-size: 12px !important; } }
 
 /*# sourceMappingURL=main.css.map */

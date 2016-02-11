@@ -7,19 +7,30 @@ $(document).ready(function () {
     function closeMenu() {
         sidebarStatus = false;
 
-        $('.sidebar').animate({
-            width: '50px'
-        }, 500);
-        $('.card').animate({
-            marginLeft: '50px'
-        }, 500);
+        if ($('.sidebar').width() === 230) {
+            $('.sidebar').animate({
+                width: '39px'
+            }, 500);
+            $('.card').animate({
+                marginLeft: '25px'
+            }, 500);
+            $('#icon').animate({
+                marginLeft: '8px'
+            }, 500);
+        } else {
+            $('.sidebar').animate({
+                width: '50px'
+            }, 500);
+            $('.card').animate({
+                marginLeft: '50px'
+            }, 500);
+            $('#icon').animate({
+                marginLeft: '12px'
+            }, 500);
+        }
 
         $('#icon').removeClass('fa-arrow-left');
         $('#icon').addClass('fa-bars');
-
-        $('#icon').animate({
-            marginLeft: '12px'
-        }, 500);
         $('.links').animate({
             paddingLeft: '0px'
         });
@@ -40,12 +51,21 @@ $(document).ready(function () {
         if (sidebarStatus === false) {
             sidebarStatus = true;
 
-            $('.sidebar').animate({
-                width: '250px'
-            }, 500);
-            $('.card').animate({
-                marginLeft: '250px'
-            }, 500);
+            if ($('.sidebar').width() === 39) {
+                $('.sidebar').animate({
+                    width: '230px'
+                }, 500);
+                $('.card').animate({
+                    marginLeft: '230px'
+                }, 500);
+            } else {
+                $('.sidebar').animate({
+                    width: '250px'
+                }, 500);
+                $('.card').animate({
+                    marginLeft: '250px'
+                }, 500);
+            }
 
             $('#icon').removeClass('fa-bars');
             $('#icon').addClass('fa-arrow-left');
